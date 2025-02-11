@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pangolin&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>Инлайн</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item navigation__item--active" data-tab="description">Описание</li>
+                <li class="navigation__item" data-tab="reviews">Отзывы</li>
+                <li class="navigation__item" data-tab="origin">Откуда?</li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <section id="description" class="tab tab--active">
+            <div class="block__text">
+                <p class="text__first">Томаты на ветке красные (помидоры) - более плотные, яркие и ароматные по сравнению с обычными. Они славятся низкой калорийностью и высоким содержанием витаминов, клетчатки, пектина и минеральных веществ. В них содержатся также каротиноиды, кислоты и мощный антиоксидант ликопин.</p>
+                <p class="text__second">Помидор - незаменимый продукт в мировой кулинарии. Он - основа многочисленных соусов, маринадов, кетчупа, испанского холодного супа Гаспачо или итальянской закуски Капрезе. С ним делают салаты, его тушат, солят и консервируют. Помидоры на веточке особенно красиво смотрятся в запеченном виде.</p>
+            </div>
+
+            <div class="blocks">
+                <div class="specifications">
+                    <p class="specifications__title">ХАРАКТЕРИСТИКИ</p>
+                    <ul class="specifications__spisok">
+                        <li class="specifications__item">
+                            <p class="item__category" id="country">Страна</p>
+                            <p class="item__category">Россия</p>
+                        </li>
+                        <li class="specifications__item">
+                            <p class="item__category" id="supplier">Поставщик</p>
+                            <p class="item__category">Фермеры: Наталья и Юрий Лейшан</p>
+                        </li>
+                        <li class="specifications__item">
+                            <p class="item__category" id="type">Тип упаковки</p>
+                            <p class="item__category">Крафтовый пакет</p>
+                        </li>
+                        <li class="specifications__item">
+                            <p class="item__category" id="quality">Сертификаты качества</p>
+                            <p class="item__category">В наличии</p>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="value">
+                    <p class="value__title">ПИЩЕВАЯ ЦЕННОСТЬ НА 100Г</p>
+                    <ul class="value__spisok">
+                        <li class="specifications__item">
+                            <p class="item__category" id="energy">Энергетическая ценность</p>
+                            <p class="item__category">18 кКал</p>
+                        </li>
+                        <li class="specifications__item">
+                            <p class="item__category" id="squirrels">Белки</p>
+                            <p class="item__category">0.9 г</p>
+                        </li>
+                        <li class="specifications__item">
+                            <p class="item__category" id="fats">Жиры</p>
+                            <p class="item__category">0.2 г</p>
+                        </li>
+                        <li class="specifications__item">
+                            <p class="item__category" id="carbohydrates">Углеводы</p>
+                            <p class="item__category">3.9 г</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="keeping">
+                <p class="keeping__title">УСЛОВИЯ ХРАНЕНИЯ</p>
+                <ul class="keeping__spisok">
+                    <li class="keeping__item">
+                        <p class="item__category" id="term">Срок хранения</p>
+                        <p class="item__category">7 дней</p>
+                    </li>
+                    <li class="keeping__item">
+                        <p class="item__category" id="temperature">Температура хранения</p>
+                        <p class="item__category">от 3 ° до 7 °</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cards">
+                <p class="cards__title">С этим товаром покупают</p>
+
+                <div class="cards__block">
+                    <div class="card__milk">
+                        <img src="./images/milk.png" alt="Молоко" class="milk__img">
+                        <p class="milk__title">Молоко 3,2 %</p>
+                        <p class="milk__text">от Вадима Рошки</p>
+                        <div class="milk__price">
+                            <p class="milk_rub">95 ₽ <span class="milk__span">/ 0,93 л</span></p>
+                            <button class="milk__btn">
+                                <img src="./images/shop.png" alt="Корзина" class="btn__img">
+                            </button>
+                        </div>
+                        <img src="./images/stars.png" alt="Рейтинг" class="milk__stars">
+                    </div>
+
+                    <div class="card__bread">
+                        <img src="./images/bread.png" alt="Хлеб" class="bread__img">
+                        <p class="bread__title">Хлеб пшеничный</p>
+                        <p class="bread__text">от Дарьи и Марии</p>
+                        <div class="bread__price">
+                            <p class="bread_rub">95 ₽ <span class="bread__span"> / 930 г</span></p>
+                            <button class="bread__btn">
+                                <img src="./images/shop.png" alt="Корзина" class="btn__img">
+                            </button>
+                        </div>
+                        <img src="./images/stars.png" alt="Рейтинг" class="bread__stars">
+                    </div>
+
+                    <div class="card__egg">
+                        <img src="./images/egg.png" alt="Яйцо" class="egg__img">
+                        <p class="egg__title">Яйца куриные</p>
+                        <p class="egg__text">от Евгения Рошаль</p>
+                        <div class="egg__price">
+                            <p class="egg_rub">120 ₽ <span class="egg__span"> / 10 шт</span></p>
+                            <button class="egg__btn">
+                                <img src="./images/shop.png" alt="Корзина" class="btn__img">
+                            </button>
+                        </div>
+                        <img src="./images/stars.png" alt="Рейтинг" class="egg__stars">
+                    </div>
+
+                    <div class="card__butter">
+                        <img src="./images/butter.png" alt="Масло" class="butter__img">
+                        <p class="butter__title">Масло сливочное 82 %</p>
+                        <p class="butter_text">от Вадима Рошки</p>
+                        <div class="butter__price">
+                            <p class="butter_rub">290 ₽ <span class="butter__span">/ 250 г</span></p>
+                            <button class="butter__btn">
+                                <img src="./images/shop.png" alt="Корзина" class="btn__img">
+                            </button>
+                        </div>
+                        <img src="./images/stars.png" alt="Рейтинг" class="butter__stars">
+                    </div>
+                </div>
+
+                <div class="cards__list">
+                    <div class="card__milk card__list--active cards__card">
+                        <img src="./images/milk.png" alt="Молоко" class="milk__img">
+                        <p class="milk__title">Молоко 3,2 %</p>
+                        <p class="milk__text">от Вадима Рошки</p>
+                        <div class="milk__price">
+                            <p class="milk_rub">95 ₽ <span class="milk__span">/ 0,93 л</span></p>
+                            <button class="milk__btn">
+                                <img src="./images/shop.png" alt="Корзина" class="btn__img">
+                            </button>
+                        </div>
+                        <img src="./images/stars.png" alt="Рейтинг" class="milk__stars">
+                    </div>
+
+                    <div class="card__bread cards__card">
+                        <img src="./images/bread.png" alt="Хлеб" class="bread__img">
+                        <p class="bread__title">Хлеб пшеничный</p>
+                        <p class="bread__text">от Дарьи и Марии</p>
+                        <div class="bread__price">
+                            <p class="bread_rub">95 ₽ <span class="bread__span"> / 930 г</span></p>
+                            <button class="bread__btn">
+                                <img src="./images/shop.png" alt="Корзина" class="btn__img">
+                            </button>
+                        </div>
+                        <img src="./images/stars.png" alt="Рейтинг" class="bread__stars">
+                    </div>
+
+                    <div class="card__egg cards__card">
+                        <img src="./images/egg.png" alt="Яйцо" class="egg__img">
+                        <p class="egg__title">Яйца куриные</p>
+                        <p class="egg__text">от Евгения Рошаль</p>
+                        <div class="egg__price">
+                            <p class="egg_rub">120 ₽ <span class="egg__span"> / 10 шт</span></p>
+                            <button class="egg__btn">
+                                <img src="./images/shop.png" alt="Корзина" class="btn__img">
+                            </button>
+                        </div>
+                        <img src="./images/stars.png" alt="Рейтинг" class="egg__stars">
+                    </div>
+
+                    <div class="card__butter cards__card">
+                        <img src="./images/butter.png" alt="Масло" class="butter__img">
+                        <p class="butter__title">Масло сливочное 82 %</p>
+                        <p class="butter_text">от Вадима Рошки</p>
+                        <div class="butter__price">
+                            <p class="butter_rub">290 ₽ <span class="butter__span">/ 250 г</span></p>
+                            <button class="butter__btn">
+                                <img src="./images/shop.png" alt="Корзина" class="btn__img">
+                            </button>
+                        </div>
+                        <img src="./images/stars.png" alt="Рейтинг" class="butter__stars">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="reviews" class="tab">
+            <div class="reviews__block">
+                <p class="reviews__text">Помогите нам стать ещё лучше. Оставляя отзывы, вы таким образом указываете нам на зоны роста. Мы правда, читаем все отзывы.</p>
+            </div>
+            <button class="reviews_btn">Оставитить отзыв</button>
+        </section>
+        <section id="origin" class="tab">
+            <div class="origin__block">
+                <div class="origin__text">
+                    <p class="origin__first">Томаты на ветке красные (помидоры) - более плотные, яркие и ароматные по сравнению с обычными. Они славятся низкой калорийностью и высоким содержанием витаминов, клетчатки, пектина и минеральных веществ. В них содержатся также каротиноиды, кислоты и мощный антиоксидант ликопин.</p>
+                    <p class="origin__second">Помидор - незаменимый продукт в мировой кулинарии. Он - основа многочисленных соусов, маринадов, кетчупа, испанского холодного супа Гаспачо или итальянской закуски Капрезе.</p>
+                </div>
+                <div>
+                    <img src="./images/worker.png" alt="Работник" class="origin__img">
+                    <div class="origin__btns">
+                        <button class="btn__certificates">Сертификаты</button>
+                        <button class="btn__supplier">О поставщике</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <script src="javascrit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+</body>
+</html>

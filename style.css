@@ -1,0 +1,526 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+a, a:link, a:visited{
+    text-decoration: none;
+}
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+.header{
+    width: 1066px;
+    height: 40px;
+    margin: 16px 187px 51px 187px;
+    border-bottom: 0.50px solid #b2b2b2;
+}
+.header__navigation{
+    text-align: center;
+}
+
+       
+.navigation__item {
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 98px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: #444;
+}
+.navigation__item--active{
+    font-weight: 600;
+    border-bottom: 5px solid #429f3a;
+    border-radius: 3.5px;
+    width: 115px;
+    padding-bottom: 13px;
+}
+
+ .tab { 
+    display: none; 
+}
+        
+.tab--active { 
+    display: block; 
+}
+.block__text{
+    width: 1066px;
+    height: 155px;
+    margin: 0px 187px 25px 187px;
+}
+.text__first,
+.text__second{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #444;
+}
+.text__first{
+    margin-bottom: 1em;
+}
+.blocks{
+    display: flex;
+}
+.specifications{
+    margin-left: 188px;
+}
+.specifications__title{
+    margin-bottom: 21px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: #444;
+    text-transform: uppercase;
+}
+.specifications__item{
+    display: flex;
+    width: 482px;
+    height: 20px;
+    border-bottom: 0.50px solid rgba(178, 178, 178, 0.5);
+    margin-bottom: 11px;
+}
+.item__category{
+    font-family:'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 167%;
+    color: #454343;
+    white-space: nowrap;
+}
+#country{
+    margin-right: 392px;
+}
+#supplier{
+    margin-right: 188px;
+}
+#type{
+    margin-right: 287px;
+}
+#quality{
+    margin-right: 272px;
+}
+.value{
+    margin-left: 103px;
+}
+.value__title{
+    margin-bottom: 21px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: #444;
+    text-transform: uppercase;
+}
+.value__item{
+    display: flex;
+    width: 482px;
+    height: 20px;
+    border-bottom: 0.50px solid rgba(178, 178, 178, 0.5);
+    margin-bottom: 11px;
+}
+#energy{
+    margin-right: 272px;
+}
+#squirrels{
+    margin-right: 415px;
+}
+#fats{
+    margin-right: 416px;
+}
+#carbohydrates{
+    margin-right: 393px;
+}
+
+.keeping{
+    margin-top: 29px;
+    margin-left: 187px;
+}
+.keeping__title{
+    margin-bottom: 21px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 125%;
+    color: #444;
+    text-transform: uppercase;
+}
+.keeping__item{
+    display: flex;
+    width: 482px;
+    height: 20px;
+    border-bottom: 0.50px solid rgba(178, 178, 178, 0.5);
+    margin-bottom: 11px;
+}
+#term{
+    margin-right: 344px;
+}
+#temperature{
+    margin-right: 265px;
+}
+.cards{
+    margin-top: 54px;
+    margin-left: 187px;
+}
+.cards__title{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 91%;
+    color: #444;
+    margin-bottom: 30px;
+}
+.cards__block{
+    display: flex;
+    gap: 10px;
+}
+.card__milk,
+.card__bread,
+.card__egg,
+.card__butter{
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    width: 250px;
+    height: 381px;
+    background: #fff;
+}
+.milk__title,
+.bread__title,
+.egg__title,
+.butter__title{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 129%;
+    color: #424141;
+    margin: 14px 0px 7px 12px;
+}
+.milk__text,
+.bread__text,
+.egg__text,
+.butter_text{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #89817f;
+    margin-left: 12px;
+}
+.milk__price,
+.bread__price,
+.egg__price,
+.butter__price{
+    display: flex;
+    margin-left: 13px;
+    gap: 79px;
+    margin-top: 29px;
+}
+.milk_rub,
+.bread_rub,
+.egg_rub,
+.butter_rub{
+    white-space: nowrap;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 90%;
+    color: #3d3c3c;
+}
+.milk__span,
+.bread__span,
+.egg__span,
+.butter__span{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    color: #a69895;
+}
+.milk__stars,
+.bread__stars
+,.egg__stars,
+.butter__stars{
+    margin-left: 13px;
+}
+.reviews__block{
+    width: 523px;
+    height: 40px;
+    margin: 53px 0px 33px 187px;
+}
+.reviews__text{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    color: #444;
+}
+.reviews_btn{
+    margin-left: 187px;
+    border-radius: 5px;
+    width: 184px;
+    height: 40px;
+    background: #429f3a;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 133%;
+    text-align: center;
+    color: #fff;
+}
+.origin__block{
+    display: flex;
+}
+.origin__text{
+    width: 511px;
+    height: 339px;
+    margin: 49px 179px 16px 187px;
+}
+.origin__first,
+.origin__second{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    color: #444;
+}
+.origin__first{
+    margin-bottom: 2em;
+}
+.origin__img{
+    width: 376px;
+    height: 267px;
+    margin-top: 56px;
+}
+.origin__btns{
+    display: flex;
+    gap:8px;
+    margin-top: 25px;
+}
+.btn__certificates,
+.btn__supplier{
+    border: 0.50px solid #444;
+    border-radius: 5px;
+    width: 184px;
+    height: 40px;
+    background: #fff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    text-align: center;
+    color: #444;
+}
+.cards__list{
+    display: none;
+}
+
+
+@media(max-width: 480px){
+    .header{
+        width: 336px;
+        height: 23px;
+        margin: 16px 19px 24px 20px;
+    }
+    .navigation__list{
+        display: flex;
+    }
+    .navigation__item{
+        font-weight: 500;
+    font-size: 15px;
+    line-height: 133%;
+    color: #444;
+        margin-right: 48px;
+    }
+    .block__text{
+        width: 334px;
+        height: 182px;
+        margin: 24px 20px 30px 21px;
+    }
+    .blocks{
+        display: block;
+    }
+    .specifications {
+        margin-top: 183px;
+        margin-left: 20px;
+    }
+    .specifications__item,
+    .keeping__item{
+        width: 339px;
+        height: 21px;
+    }
+    .specifications__title,
+    .value__title,
+    .keeping__title{
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 133%;
+    }
+    .item__category{
+        font-size: 14px;
+    }
+    #country{
+        margin-right: 233px;
+    }
+    #supplier{
+        margin-right: 68px;
+    }
+    #type{
+        margin-right: 109px;
+    }
+    #quality{
+        margin-right: 94px;
+    }
+    .value,
+    .keeping{
+        margin-top: 15px;
+        margin-left: 19px;
+    }
+    #energy{
+        margin-right: 95px;
+    }
+    #squirrels{
+        margin-right: 254px;
+    }
+    #fats{
+        margin-right: 260px;
+    }
+    #carbohydrates{
+        margin-right: 235px;
+    }
+    #term{
+        margin-right: 180px;
+    }
+    #temperature{
+        margin-right: 92px;
+    }
+    .cards{
+        margin-left: 18px;
+    }
+    .reviews__block{
+        width: 334px;
+        margin: 24px 21px 32px 20px;
+        height: 59px;
+    }
+    .reviews_btn{
+        margin-left: 95px;
+    }
+    .origin__block{
+        display: block;
+    }
+    .origin__text{
+        width: 334px;
+        height: 182px;
+        margin: 24px 20px 17px 21px;
+    }
+    .origin__img{
+        margin-top: 141px;
+        margin-left: 19px;
+        border-radius: 5px;
+        width: 336px;
+        height: 295px;
+    }
+    .origin__btns{
+        margin-left: 19px;
+        margin-top: 34px;
+    }
+    .btn__certificates,
+    .btn__supplier{
+        width: 163px;
+        height: 35px;
+    }
+    .cards__block{
+        display: none;
+    }
+    .cards__list{
+        display: block;
+    }
+    .cards__card {
+        display: none;
+        transition: opacity 0.5s ease-in-out;
+    }
+    
+    .card__list--active {
+        display: block;
+        opacity: 1;
+    }
+    
+}
